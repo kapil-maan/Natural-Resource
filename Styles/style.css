@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  /* border: 1px solid rgb(0, 0, 255); */
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.aa {
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);  
+  height: 2px;
+  bottom: 2px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  width: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-text h1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: -6px 6px 8px rgba(0, 128, 0, 0.8);
+  transition: all .15s;
+}
+
+.logo-text h1:hover {
+  color: white;
+  text-shadow: 0 0 20px white;
+}
+.logo {
+  height: 60px;
+}
+
+.buttons a{
+  background-color: white;
+  border: 2px solid green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  transition: all .15s;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.buttons a:hover{
+  background-color: green;
+  color: white;
+  border: 2px solid green;
+
+}
+
+footer {
+  height: 8vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.about-btn {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all .15s;
+  margin-right: 1175px;
+  font-size: 1rem;
+}
+
+.about-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+footer div {
+  height: 5vh;
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fa-regular, .fa-brands {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all .15s;
+}
+
+.fa-regular:hover, .fa-brands:hover{
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.fa-arrow-up {
+  font-size: 2rem;
+  background-color: white;
+  padding: 20px 23px 20px 23px;
+  border-radius: 50px; 
+  color: rgb(0, 0, 0);
+  transition: all .15s;
+  position: fixed;
+  bottom: 100px;
+  right: 50px ;
+}
+
+.fa-arrow-up:hover{
+  color: rgb(255, 255, 255);
+  background-color: green;
+}

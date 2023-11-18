@@ -1,0 +1,21 @@
+body {
+    background-image: url("../Assets/Images/background-about.jpeg");
+    backdrop-filter: blur(10px);
+}
+
+#main1 {
+    height: 82vh;
+    width: 100vw;
+}
+
+
+h1 {
+    color:red;
+    text-align: center ;
+}
+
+
+h2,p {
+    color:yellow;
+    text-align: center ;
+}

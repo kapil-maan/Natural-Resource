@@ -1,0 +1,76 @@
+body {
+    background-image: url("../Assets/Images/background-lifestyle.jpeg");
+    background-color: rgba(0, 0, 139, .3);
+    background-repeat: repeat-y;
+    background-blend-mode: overlay;
+    background-size: 250vh;
+    backdrop-filter: blur(15px);
+}
+
+
+.kapil {
+    text-align: center;
+    color:red;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+h1, h3, p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.aa {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top:250px;
+    margin-bottom:500px;
+    font-size: 3rem;
+    position: relative;
+}
+
+.aa:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+#main1 {
+    height: 600vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main1 img {
+    height: 300px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.info {
+    height: 80vh;
+    width: 60vw;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info h3 {
+    font-size: 2rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+}
+
+.divider-line {
+    width: 1000px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+}

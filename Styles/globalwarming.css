@@ -1,0 +1,52 @@
+body{
+    background-image: url("../Assets/Images/global\ warming\ 3.jpg");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+
+#main1 {
+    height: 82vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#main1 h1 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    transition: all .15s;
+    cursor: default;
+}
+
+#main1 h1:hover {
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+#main1 a {
+    border: 2px solid green;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .15s;
+    font-size: 1.5rem;
+    margin-left: 800px;
+}
+
+#main1 a:hover {
+    color: white;
+    background-color: green;
+}
+
+#main1 p {
+    color: white;
+    text-shadow: 0 0 20px black;
+}

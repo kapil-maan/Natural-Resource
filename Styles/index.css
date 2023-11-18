@@ -1,0 +1,210 @@
+body {
+    background-image: url("../Assets/Images/background-index.jpeg");
+    background-repeat: repeat-y;
+    backdrop-filter: blur(1px);
+}
+
+#main1 {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main1 div {
+    height: 100px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+
+.anim-text1 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+}
+
+.anim-text {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+}
+
+.anim-text::after {
+    content: "";
+    animation: anim-text 20s 5;
+}
+
+@keyframes anim-text {
+    0% {
+        color: white;
+        text-shadow: 0 0 20px white;
+        content: "Earth";
+    }
+
+    25% {
+        color: white;
+        text-shadow: 0 0 20px white;
+        content: "Trees";
+    }
+
+    50% {
+        color: white;
+        text-shadow: 0 0 20px white;
+        content: "Water";    
+    }
+
+    75% {
+        color: white;
+        text-shadow: 0 0 20px white;
+        content: "Life";    
+    }
+
+    100% {
+        color: white;
+        text-shadow: 0 0 20px white;
+        content: "Earth";
+    }
+}
+
+#main2 {
+    height: 82vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+#main2 h1{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#main2 h1:hover {
+    cursor: default;
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: all .15s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.6);
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+        
+.card img {
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.quotes {
+    font-size: 1rem;
+    color: white;
+}
+
+.quotes::after {
+    content: "";
+    animation: quotes-anim 30s 5;
+}
+
+@keyframes quotes-anim {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 100%;
+        content: "“The greatest threat to our planet is the belief that someone else will save it.” - Robert Swan";
+        font-style: italic;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 100%;
+        content: "“Often when you think youre at the end of something, you're at the beginning of something else.”– Fred Rogers";
+        font-style: italic;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+        content: "“There is no such thing as 'away'. When we throw anything away it must go somewhere.”– Annie Leonard";
+        font-style: italic;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 100%;
+        content: "“When you put the whole picture together, recycling is the right thing to do.”– Pam Shoemaker";
+        font-style: italic;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 100%;
+        content: "“We cannot solve our problems with the same thinking we used when we created them.”– Albert Einstein";
+        font-style: italic;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
